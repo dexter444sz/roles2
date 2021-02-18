@@ -10,4 +10,4 @@
   synchronize:
     src: "{{ build_folder }}"
     dest: "{{ deploy_folder }}"
-  delegate_to: build
+  delegate_to: 34.123.212.87
