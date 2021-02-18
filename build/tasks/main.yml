@@ -1,2 +1,17 @@
 ---
 # tasks file for build
+- name: install packages
+  apt: name{{item}} state=installed
+  with_items:
+    - default-jdk
+    - maven
+
+-name: clone app from GitHub
+  git:
+    repo: https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
+    dest: {{ build_folder }}
+
+- name: build war artifact
+  shell: mvn package
+  args:
+    chdir: {{ build_folder }}

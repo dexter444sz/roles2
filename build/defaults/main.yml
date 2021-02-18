@@ -1,2 +1,3 @@
 ---
 # defaults file for build
+build_folder: /home/boxfuse-sample-java-war-hello/

@@ -1,2 +1,4 @@
 ---
 # defaults file for deploy
+build_folder: /home/boxfuse-sample-java-war-hello/target/hello-1.0.war
+deploy_folder: /var/lib/tomcat9/webapps/
