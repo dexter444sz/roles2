@@ -1,7 +1,7 @@
 ---
 # tasks file for deploy
 - name: install packages
-  apt: name={{item}} state=present
+  apt: name=sudo -i{{item}} state=present
   with_items:
     - default-jdk
     - tomcat9
@@ -10,4 +10,4 @@
   synchronize:
     src: "{{ build_folder }}"
     dest: "{{ deploy_folder }}"
-  delegate_to: 34.123.212.87
+  delegate_to: build
