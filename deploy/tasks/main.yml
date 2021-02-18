@@ -8,6 +8,6 @@
 
 - name: Transfer war artifact
   synchronize:
-    src: {{ build_folder }}
-    dest: {{ deploy_folder }}
+    src: "{{ build_folder }}"
+    dest: "{{ deploy_folder }}"
   delegate_to: build

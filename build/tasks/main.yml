@@ -9,9 +9,9 @@
 - name: clone app from GitHub
   git:
     repo: https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
-    dest: {{ build_folder }}
+    dest: "{{ build_folder }}"
 
 - name: build war artifact
   shell: mvn package
   args:
-    chdir: {{ build_folder }}
+    chdir: "{{ build_folder }}"
