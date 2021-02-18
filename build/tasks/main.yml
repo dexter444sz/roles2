@@ -6,7 +6,7 @@
     - default-jdk
     - maven
 
--name: clone app from GitHub
+- name: clone app from GitHub
   git:
     repo: https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
     dest: {{ build_folder }}
